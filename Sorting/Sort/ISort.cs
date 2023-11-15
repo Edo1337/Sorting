@@ -8,6 +8,6 @@ namespace Sorting.Sort
 {
     internal interface ISort
     {
-        public static int[] Sort(int[] nums);
+        int[] Sort(ref int[] arr);
     }
 }

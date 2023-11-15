@@ -1,9 +1,8 @@
 ﻿using Sorting.Sort;
-using System;
 
-namespace BubbleSort
+namespace Sorting
 {
-    internal class BubbleSort: ISort
+    class BubbleSort: ISort
     {
         private static void Swap(ref int e1, ref int e2)
         {
@@ -12,7 +11,7 @@ namespace BubbleSort
             e2 = temp;
         }
 
-        public static int[] Sort(ref int[] arr)
+        public int[] Sort(ref int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {

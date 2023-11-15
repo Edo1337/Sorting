@@ -1,40 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BinarySearch
+namespace Sorting
 {
-    static class ArrayPlus
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="array"></param>
-        public static void Show(int[] array)
-        {
-            foreach (int i in array)
-                Console.WriteLine(i);
-        }
-
-        /// <summary>
-        /// Создает рандомный массив указанной длины
-        /// </summary>
-        /// <paramk name="arrayLenght"></param>
-        /// <returns>Рандомный массив</returns>
-        public static int[] ArrRnd(int arrayLenght)
-        {
-            int[] arr = new int[arrayLenght];
-            Random random = new Random();
-
-            for (int i = 0; i < arrayLenght - 1; i++)
-                arr[i] = random.Next(0, 1000);
-
-            return arr;
-        }
-    }
     static class BinarySearch
     {
         private static void ShowInfo(ref int searchedElement, ref int index, ref uint i)
@@ -65,21 +32,5 @@ namespace BinarySearch
             return -1;
         }
 
-    }
-    internal class BinarySearch
-    {
-        static void Main(string[] args)
-        {
-            int[] arr = ArrayPlus.ArrRnd(100);
-
-            Array.Sort(arr);
-
-            ArrayPlus.Show(arr);
-
-            Console.Write($"Какой элемент массива вы хотите найти: ");
-            int elementForFind = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(BinarySearch.Find(ref arr, ref elementForFind));
-        }
     }
 }
