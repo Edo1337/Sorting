@@ -9,6 +9,10 @@ namespace BinarySearch
 {
     static class ArrayPlus
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
         public static void Show(int[] array)
         {
             foreach (int i in array)
@@ -62,7 +66,7 @@ namespace BinarySearch
         }
 
     }
-    internal class Program
+    internal class BinarySearch
     {
         static void Main(string[] args)
         {

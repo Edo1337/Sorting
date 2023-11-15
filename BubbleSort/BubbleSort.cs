@@ -2,7 +2,7 @@
 
 namespace BubbleSort
 {
-    internal class Program
+    internal class BubbleSort
     {
         private static void Swap(ref int e1, ref int e2)
         {
