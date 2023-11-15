@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Sorting.Search;
+using System;
 
-namespace Sorting
+namespace SortAndSearch
 {
-    static class BinarySearch
+    class BinarySearch: ISearch
     {
-        private static void ShowInfo(ref int searchedElement, ref int index, ref uint i)
+        private void ShowInfo(ref int searchedElement, ref int index, ref uint i)
         {
             Console.WriteLine($"Элемент массива {searchedElement} под индексом {index} найден за {i} циклов");
         }
-        public static int Find(ref int[] array, ref int searchedElement)
+        public int Search(ref int[] array, ref int searchedElement)
         {
             var left = 0;
             var right = array.Length - 1;

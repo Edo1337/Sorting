@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Search\BinarySearch.cs" />
+    <Compile Include="Search\ISearch.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

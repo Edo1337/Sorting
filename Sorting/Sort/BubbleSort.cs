@@ -1,8 +1,8 @@
 ﻿using Sorting.Sort;
 
-namespace Sorting
+namespace SortAndSearch
 {
-    class BubbleSort: ISort
+    public class BubbleSort: ISort
     {
         private static void Swap(ref int e1, ref int e2)
         {

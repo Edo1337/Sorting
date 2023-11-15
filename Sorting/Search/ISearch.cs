@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortAndSearch.Sort
+namespace SortAndSearch.Search
 {
-    internal interface ISort
+    internal interface ISearch
     {
-        int[] Sort(ref int[] arr);
+        int Search(ref int[] array, ref int searchedElement);
     }
 }
