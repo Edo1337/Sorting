@@ -14,9 +14,8 @@ namespace SortAndSearch
             ArrayPlus.Show(testArr);
 
             Console.WriteLine();
-
-            var selectionSort = new SelectionSort();
-            selectionSort.Sort(testArr);
+            var insertionSort = new InsertionSort();
+            insertionSort.Sort(testArr);
             ArrayPlus.Show(testArr);
 
             Console.Write($"Какой элемент массива вы хотите найти: ");
