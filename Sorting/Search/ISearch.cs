@@ -4,6 +4,6 @@ namespace SortAndSearch
 {
     internal interface ISearch
     {
-        int Search(ref int[] array, ref int searchedElement);
+        int Search(int[] array, int searchedElement);
     }
 }

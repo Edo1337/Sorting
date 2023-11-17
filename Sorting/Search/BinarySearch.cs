@@ -2,18 +2,18 @@
 
 namespace SortAndSearch
 {
-    class BinarySearch: ISearch
+    class BinarySearch : ISearch
     {
-        public BinarySearch(ref int[] array, ref int searchedElement) 
+        public BinarySearch(int[] array, int searchedElement)
         {
-            Search(ref array, ref searchedElement);
+            Search(array, searchedElement);
         }
 
-        private void ShowInfo(ref int searchedElement, ref int index, ref uint i)
+        private void ShowInfo(int searchedElement, int index, uint i)
         {
             Console.WriteLine($"Элемент массива {searchedElement} под индексом {index} найден за {i} циклов");
         }
-        public int Search(ref int[] _array, ref int searchedElement)
+        public int Search(int[] _array, int searchedElement)
         {
             var left = 0;
             var right = _array.Length - 1;
@@ -29,7 +29,7 @@ namespace SortAndSearch
                     right = middle - 1;
                 else
                 {
-                    ShowInfo(ref searchedElement, ref middle, ref i);
+                    ShowInfo(searchedElement, middle, i);
                     return middle;
                 }
                 i++;

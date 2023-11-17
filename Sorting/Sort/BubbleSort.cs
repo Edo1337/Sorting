@@ -2,16 +2,23 @@
 
 namespace SortAndSearch
 {
-    public class BubbleSort: ISort
+    public class BubbleSort : ISort
     {
+
         private static void Swap(ref int e1, ref int e2)
         {
             var temp = e1;
             e1 = e2;
             e2 = temp;
         }
+        private static void Swap(ref char e1, ref char e2)
+        {
+            var temp = e1;
+            e1 = e2;
+            e2 = temp;
+        }
 
-        public int[] Sort(ref int[] arr)
+        public int[] Sort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {

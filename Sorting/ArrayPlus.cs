@@ -11,7 +11,7 @@ namespace SortAndSearch
         /// Дает представление заданному массиву
         /// </summary>
         /// <param name="array"></param>
-        public static void Show(ref int[] array)
+        public static void Show(int[] array)
         {
             foreach (int i in array)
             {

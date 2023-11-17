@@ -4,6 +4,6 @@ namespace SortAndSearch
 {
     internal interface ISort
     {
-        int[] Sort(ref int[] arr);
+        int[] Sort(int[] arr);
     }
 }

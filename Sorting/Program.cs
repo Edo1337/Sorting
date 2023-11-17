@@ -32,17 +32,17 @@ namespace SortAndSearch
             //binarySearch.Search(ref arr, ref elementForSearch);
 
             //Test
-            int[] testArr = ArrayPlus.NewArrOneHund();
-            ArrayPlus.Show(ref testArr);
+            int[] testArr = ArrayPlus.NewArrRnd();
+            ArrayPlus.Show(testArr);
 
             var bSort = new BubbleSort();
-            bSort.Sort(ref testArr);
-            ArrayPlus.Show(ref testArr);
+            bSort.Sort(testArr);
+            ArrayPlus.Show(testArr);
 
             Console.Write($"Какой элемент массива вы хотите найти: ");
             int elementForSearch = int.Parse(Console.ReadLine());
 
-            new BinarySearch(ref testArr, ref elementForSearch);
+            new BinarySearch(testArr, elementForSearch);
         }
     }
 }
