@@ -2,18 +2,14 @@
 
 namespace SortAndSearch
 {
+    /// <summary>
+    /// Сортровка пузырьком. n^2
+    /// </summary>
     public class BubbleSort : ISort
     {
-
-        private static void Swap(ref int e1, ref int e2)
+        private void Swap(ref int e1, ref int e2)
         {
-            var temp = e1;
-            e1 = e2;
-            e2 = temp;
-        }
-        private static void Swap(ref char e1, ref char e2)
-        {
-            var temp = e1;
+            int temp = e1;
             e1 = e2;
             e2 = temp;
         }

@@ -10,33 +10,13 @@ namespace SortAndSearch
     {
         static void Main(string[] args)
         {
-            ////Сортировка
-            //int[] nums = ArrayPlus.NewArrRnd(100);
-
-            //var bubbleSort = new BubbleSort();
-            //bubbleSort.Sort(ref nums);
-
-            //ArrayPlus.Show(ref nums);
-
-            ////Поиск
-            //int[] arr = ArrayPlus.NewArrRnd(100);
-
-            //var binarySearch = new BinarySearch();
-            //bubbleSort.Sort(ref arr);
-
-            //ArrayPlus.Show(ref arr);
-
-            //Console.Write($"Какой элемент массива вы хотите найти: ");
-            //int elementForSearch = int.Parse(Console.ReadLine());
-
-            //binarySearch.Search(ref arr, ref elementForSearch);
-
-            //Test
             int[] testArr = ArrayPlus.NewArrRnd();
             ArrayPlus.Show(testArr);
 
-            var bSort = new BubbleSort();
-            bSort.Sort(testArr);
+            Console.WriteLine();
+
+            var selectionSort = new SelectionSort();
+            selectionSort.Sort(testArr);
             ArrayPlus.Show(testArr);
 
             Console.Write($"Какой элемент массива вы хотите найти: ");

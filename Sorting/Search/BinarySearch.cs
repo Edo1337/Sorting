@@ -9,10 +9,11 @@ namespace SortAndSearch
             Search(array, searchedElement);
         }
 
-        private void ShowInfo(int searchedElement, int index, uint i)
+        private void ShowResult(int searchedElement, int index, uint i)
         {
             Console.WriteLine($"Элемент массива {searchedElement} под индексом {index} найден за {i} циклов");
         }
+
         public int Search(int[] _array, int searchedElement)
         {
             var left = 0;
@@ -29,7 +30,7 @@ namespace SortAndSearch
                     right = middle - 1;
                 else
                 {
-                    ShowInfo(searchedElement, middle, i);
+                    ShowResult(searchedElement, middle, i);
                     return middle;
                 }
                 i++;
